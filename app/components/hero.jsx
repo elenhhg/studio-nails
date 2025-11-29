@@ -1,20 +1,20 @@
-"use client";
+"use client"
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion"
 
 export default function Hero() {
-  const { scrollYProgress } = useScroll();
-  const scale = useTransform(scrollYProgress, [0, 0.2], [1, 1.15]);
+  const { scrollYProgress } = useScroll()
+  const scale = useTransform(scrollYProgress, [0, 0.2], [1, 1.15])
 
   return (
-    <section id="hero" className="w-full min-h-screen flex flex-col items-center justify-center text-center px-6 relative overflow-hidden">
+    <section
+      id="hero"
+      className="w-full min-h-screen flex flex-col items-center justify-center text-center px-6 relative overflow-hidden"
+    >
       {/* Background Image */}
-      <motion.div
-        className="absolute inset-0 w-full h-full"
-        style={{ scale }}
-      >
+      <motion.div className="absolute inset-0 w-full h-full" style={{ scale }}>
         <img
-          src="/images/salon.png"
+          src="images/studio.png"
           alt="Nail Studio Background"
           className="w-full h-full object-cover brightness-75"
         />
@@ -28,13 +28,9 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
-        <h1 className="text-5xl sm:text-7xl font-playfair font-bold text-white tracking-tight">
-          Gianyxaki
-        </h1>
+        <h1 className="text-5xl sm:text-7xl font-playfair font-bold text-white tracking-tight">Gianyxaki</h1>
 
-        <h2 className="mt-2 text-3xl sm:text-4xl font-greatvibes text-pink-300 tracking-wide">
-          Elena’s Glow Bar
-        </h2>
+        <h2 className="mt-2 text-3xl sm:text-4xl font-greatvibes text-pink-300 tracking-wide">Elena’s Glow Bar</h2>
       </motion.div>
 
       <motion.p
@@ -61,5 +57,5 @@ export default function Hero() {
         </button>
       </motion.div>
     </section>
-  );
+  )
 }
