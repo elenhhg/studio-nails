@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Gianyxaki Elena's Nails",
+  title: " Yianixaki - Elena's Glow Bar",
   
 };
 

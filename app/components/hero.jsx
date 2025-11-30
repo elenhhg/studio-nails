@@ -22,40 +22,47 @@ export default function Hero() {
       </motion.div>
 
       {/* Content */}
-      <motion.div
-        className="relative z-10"
-        initial={{ opacity: 0, y: 25 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: "easeOut" }}
-      >
-        <h1 className="text-5xl sm:text-7xl font-playfair font-bold text-white tracking-tight">Gianyxaki</h1>
+      <div className="relative z-10 flex flex-col items-center justify-center">
+        {/* Hero Title with styled Y */}
+        <h1 className="text-7xl sm:text-9xl md:text-[7rem] lg:text-[8rem] font-playfair font-extrabold text-white tracking-tight flex items-center justify-center gap-2">
+          <span className="font-greatvibes mr-2 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600">
+            Y
+          </span>
+          <span>ianixaki</span>
+        </h1>
 
-        <h2 className="mt-2 text-3xl sm:text-4xl font-greatvibes text-pink-300 tracking-wide">Elena’s Glow Bar</h2>
-      </motion.div>
+        {/* Subtitle */}
+        <h2 className="mt-4 text-3xl sm:text-4xl font-greatvibes text-pink-300 tracking-wide">
+          Elena’s Glow Bar
+        </h2>
+      </div>
 
-      <motion.p
-        className="mt-6 text-xl sm:text-2xl font-playfair text-white/90 max-w-2xl leading-relaxed relative z-10"
-        initial={{ opacity: 0, y: 25 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
-      >
-        Elevating nail artistry with elegance, precision, and a touch of modern luxury.
-      </motion.p>
-
-      <motion.div
-        className="mt-10 flex gap-4 relative z-10 flex-wrap justify-center"
-        initial={{ opacity: 0, y: 25 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: "easeOut", delay: 1.4 }}
-      >
-        <button className="px-8 py-3 bg-pink-500 text-white rounded-full text-lg font-semibold hover:bg-pink-600 transition">
+      {/* Buttons */}
+      <div className="mt-10 flex gap-4 relative z-10 flex-wrap justify-center">
+        <button
+          className="px-8 py-3 bg-pink-500 text-white rounded-full text-lg font-semibold hover:bg-pink-600 transition"
+          onClick={() => {
+            const contactSection = document.getElementById('contact')
+            if (contactSection) {
+              contactSection.scrollIntoView({ behavior: 'smooth' })
+            }
+          }}
+        >
           Book Appointment
         </button>
 
-        <button className="px-8 py-3 border border-white/40 text-white rounded-full text-lg font-medium backdrop-blur-sm hover:bg-white/10 transition">
+        <button
+          className="px-8 py-3 border border-white/40 text-white rounded-full text-lg font-medium backdrop-blur-sm hover:bg-white/10 transition"
+          onClick={() => {
+            const servicesSection = document.getElementById('services')
+            if (servicesSection) {
+              servicesSection.scrollIntoView({ behavior: 'smooth' })
+            }
+          }}
+        >
           View Services
         </button>
-      </motion.div>
+      </div>
     </section>
   )
 }

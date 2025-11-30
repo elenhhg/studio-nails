@@ -8,7 +8,7 @@ const greatVibes = Great_Vibes({ subsets: ["latin"], weight: "400" })
 
 export default function MeetTheArtist() {
   const artist = {
-    name: "Elena Gianyxaki",
+    name: "Elena Yianixaki",
     role: "Master Nail Artist",
     image: "/images/artist.png",
     description: `Elena is a master nail artist with years of experience in creative designs and professional nail care. 
@@ -19,7 +19,7 @@ Beyond nails, she shares tips on nail health and maintenance to ensure your nail
   }
 
   return (
-    <section id="artist" className="relative py-24 px-4 sm:px-10 lg:px-20">
+    <section id="meet" className="relative py-24 px-4 sm:px-10 lg:px-20">
 
       {/* Section Heading */}
       <div className="max-w-4xl mx-auto text-center mb-12">

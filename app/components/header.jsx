@@ -1,13 +1,14 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Home, Grid, Briefcase, Mail } from "lucide-react"
+import { Home, Grid, Briefcase, Mail, User } from "lucide-react"
 
 export function Header({ onSectionChange, activeSection }) {
   const menuItems = [
     { id: "hero", icon: Home, label: "Home" },
     { id: "gallery", icon: Grid, label: "My Work" },
     { id: "services", icon: Briefcase, label: "Services" },
+    { id: "meet", icon: User, label: "Meet The Artist" },
     { id: "contact", icon: Mail, label: "Contact" },
   ]
 

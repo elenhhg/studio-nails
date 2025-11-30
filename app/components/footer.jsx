@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="absolute top-0 left-0 w-full h-px bg-white/30"></div>
 
       <div className="max-w-7xl mx-auto px-6 text-center text-white text-sm sm:text-base">
-        &copy; {new Date().getFullYear()} Gianyχaki Elena's Nails. All rights reserved.
+        &copy; {new Date().getFullYear()} Yianixaki Elena's Glow Bar . All rights reserved.
       </div>
     </footer>
   )
